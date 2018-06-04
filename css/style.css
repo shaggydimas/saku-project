@@ -121,7 +121,7 @@ main#container {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 9999;
+  z-index: 9998;
   left: 0;
   top: 0;
   display: none; }
@@ -185,7 +185,28 @@ main#container {
         background-position: 50% 15px;
         background-attachment: initial; } }
     .about-soda [class^="soda-"] p {
-      margin-top: 40px; }
+      margin-top: 40px;
+      margin-bottom: 60px; }
+
+.scroll-btn {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 7px 12px;
+  transition: background .4s; }
+  .scroll-btn.next:hover {
+    background: #fff;
+    color: #FF6D69; }
+  .scroll-btn.prev:hover {
+    background: #fff;
+    color: #FFBD66; }
+  .scroll-btn:active, .scroll-btn:focus {
+    outline: 0; }
+  .scroll-btn:active {
+    transform: scale(1.01); }
+  @media (max-width: 767px) {
+    .scroll-btn {
+      display: none; } }
 
 .modal-opened .about-soda {
   visibility: visible;
