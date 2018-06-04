@@ -198,7 +198,6 @@ main#container {
 	background: #fff;
 	height: 400px;
 	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
 	margin: 20px auto 0 auto;
 	position: relative;
 	visibility: hidden;
@@ -243,7 +242,7 @@ main#container {
 	}
 }
 
-.modal-open {
+.modal-opened {
 	.about-soda {
 		visibility: visible;
 		opacity: 1;

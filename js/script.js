@@ -4,13 +4,13 @@ $(function() {
 	$('[modal-toggle]').on('click', function(e) {
 		var target = $(this).attr('modal-toggle');
 		$(target).fadeIn();
-		$('body').addClass('modal-open');
+		$('body').addClass('modal-opened');
 	});
 
 	//overlay
 	$('.overlay, .close-btn').on('click', function(e) {
 		$(this).fadeOut();
-		$('body').removeClass('modal-open');
+		$('body').removeClass('modal-opened');
 	})
 	//script for bottle animation
 	setInterval(function() {

@@ -152,7 +152,6 @@ main#container {
   background: #fff;
   height: 400px;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
   margin: 20px auto 0 auto;
   position: relative;
   visibility: hidden;
@@ -188,7 +187,7 @@ main#container {
     .about-soda [class^="soda-"] p {
       margin-top: 40px; }
 
-.modal-open .about-soda {
+.modal-opened .about-soda {
   visibility: visible;
   opacity: 1;
   transform: translateY(0); }
