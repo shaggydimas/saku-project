@@ -13,6 +13,7 @@ main#container {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 95vh;
+  min-height: 700px;
   position: relative;
   overflow: hidden; }
 
@@ -151,6 +152,7 @@ main#container {
   background: #fff;
   height: 400px;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   margin: 20px auto 0 auto;
   position: relative; }
   .about-soda .soda-1 {
