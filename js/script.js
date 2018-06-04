@@ -38,7 +38,7 @@ $(function() {
 		}
 		else {
 			container.animate({
-				scrollTop: parent.prev().offset().top - container.scrollTop()
+				scrollTop: parent.prev().offset().top + container.scrollTop() - 20
 			})
 		}
 	})

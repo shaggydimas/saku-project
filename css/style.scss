@@ -55,19 +55,18 @@ main#container {
 }
 
 .cta-text {
+
+	h1 {
+		font-size: 2em;
+		margin-top: 40px;
+		text-shadow: 3px 3px 0 rgba(0,0,0,.7);
+		color: #fff;
+	}
 	p {
 		color: #fff;
-		&:first-child {
-			font-size: 2em;
-			margin-top: 40px;
-			text-shadow: 3px 3px 0 rgba(0,0,0,.7);
-		}
-
-		&:last-child {
-			font-size: 1em;
-			line-height: 1.7;
-			text-shadow: 1px 1px 0 rgba(0,0,0,.85);
-		}
+		font-size: 1em;
+		line-height: 1.7;
+		text-shadow: 1px 1px 0 rgba(0,0,0,.85);
 	}
 	@media(max-width: 767px) {
 		text-align: center;
