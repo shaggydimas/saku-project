@@ -25,7 +25,7 @@ $(function() {
 		active.removeClass('active');
 		sibling.addClass('active');
 	}, 4000);
-	
+
 	//soda info scroll buttons
 	$('.scroll-btn').on('click', function(e) {
 		var container = $(this).closest('.about-soda');
@@ -38,7 +38,7 @@ $(function() {
 		}
 		else {
 			container.animate({
-				scrollTop: parent.prev().offset().top  container.scrollTop()
+				scrollTop: parent.prev().offset().top + container.scrollTop()
 			})
 		}
 	})
