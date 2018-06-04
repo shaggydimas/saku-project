@@ -14,7 +14,6 @@ main#container {
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 95vh;
 	min-height: 700px;
 	position: relative;
 	overflow: hidden;
@@ -22,8 +21,7 @@ main#container {
 
 .cloud, .cloud-2 {
 	position: absolute;
-	bottom: 67px;
-	height: 200px;
+	height: 150px;
 	animation: cloud 10s;
 
 	@media(max-width: 767px) {
@@ -32,11 +30,13 @@ main#container {
 }
 
 .cloud {
+	bottom: 67px;
 	left: 0;
 	animation: cloud 160s infinite;
 }
 
 .cloud-2 {
+	bottom: 50px;
 	right: 0;
 	animation: cloudTwo 200s infinite;
 }
@@ -201,6 +201,10 @@ main#container {
 	-webkit-overflow-scrolling: touch;
 	margin: 20px auto 0 auto;
 	position: relative;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-100px);
+	transition: all .4s;
 
 	.soda-1 {
 		background-color: #FF6D69;
@@ -236,6 +240,14 @@ main#container {
 		p {
 			margin-top: 40px;
 		}
+	}
+}
+
+.modal-open {
+	.about-soda {
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
 
