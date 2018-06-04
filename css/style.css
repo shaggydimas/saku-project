@@ -19,6 +19,9 @@ main#container {
 .cloud, .cloud-2 {
   position: absolute;
   height: 150px;
+  -webkit-animation: cloud 10s;
+  -moz-animation: cloud 10s;
+  -o-animation: cloud 10s;
   animation: cloud 10s; }
   @media (max-width: 767px) {
     .cloud, .cloud-2 {
@@ -27,11 +30,17 @@ main#container {
 .cloud {
   bottom: 67px;
   left: 0;
+  -webkit-animation: cloud 160s infinite;
+  -moz-animation: cloud 160s infinite;
+  -o-animation: cloud 160s infinite;
   animation: cloud 160s infinite; }
 
 .cloud-2 {
   bottom: 50px;
   right: 0;
+  -webkit-animation: cloudTwo 200s infinite;
+  -moz-animation: cloudTwo 200s infinite;
+  -o-animation: cloudTwo 200s infinite;
   animation: cloudTwo 200s infinite; }
 
 .logo {
@@ -73,6 +82,8 @@ main#container {
   .grape-btn:active, .grape-btn:focus {
     outline: 0; }
   .grape-btn:active {
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
     transform: scale(1.01); }
   .grape-btn:hover {
     opacity: .8; }
@@ -143,8 +154,12 @@ main#container {
       left: 49%;
       top: calc(50% - 5px); }
     .overlay .close-btn:before {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
       transform: rotate(45deg); }
     .overlay .close-btn:after {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
       transform: rotate(-45deg); }
 
 .about-soda {
@@ -156,6 +171,8 @@ main#container {
   position: relative;
   visibility: hidden;
   opacity: 0;
+  -webkit-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
   transform: translateY(-100px);
   transition: all .4s; }
   .about-soda .soda-1 {
@@ -203,6 +220,8 @@ main#container {
   .scroll-btn:active, .scroll-btn:focus {
     outline: 0; }
   .scroll-btn:active {
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
     transform: scale(1.01); }
   @media (max-width: 767px) {
     .scroll-btn {
@@ -211,8 +230,11 @@ main#container {
 .modal-opened .about-soda {
   visibility: visible;
   opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
   transform: translateY(0); }
 
+/*animations*/
 @keyframes cloud {
   0% {
     left: 0%; }
@@ -220,7 +242,49 @@ main#container {
     left: 40%; }
   100% {
     left: 80%; } }
+@-webkit-keyframes cloud {
+  0% {
+    left: 0%; }
+  50% {
+    left: 40%; }
+  100% {
+    left: 80%; } }
+@-moz-keyframes cloud {
+  0% {
+    left: 0%; }
+  50% {
+    left: 40%; }
+  100% {
+    left: 80%; } }
+@-o-keyframes cloud {
+  0% {
+    left: 0%; }
+  50% {
+    left: 40%; }
+  100% {
+    left: 80%; } }
 @keyframes cloudTwo {
+  0% {
+    right: 0%; }
+  50% {
+    right: 40%; }
+  100% {
+    right: 80%; } }
+@-webkit-keyframes cloudTwo {
+  0% {
+    right: 0%; }
+  50% {
+    right: 40%; }
+  100% {
+    right: 80%; } }
+@-moz-keyframes cloudTwo {
+  0% {
+    right: 0%; }
+  50% {
+    right: 40%; }
+  100% {
+    right: 80%; } }
+@-o-keyframes cloudTwo {
   0% {
     right: 0%; }
   50% {
