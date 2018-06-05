@@ -265,6 +265,7 @@ main#container {
 	color: #fff;
 	padding: 7px 12px;
 	transition: background .4s;
+	cursor: pointer;
 	&.next {
 		&:hover {
 			background: #fff;
@@ -302,6 +303,13 @@ main#container {
 		-ms-transform: translateY(0);
 		transform: translateY(0);
 	}
+}
+
+/*footer*/
+footer {
+	padding: 25px 0;
+	border-top: 1px solid silver;
+	font-size: 14px;
 }
 /*animations*/
 @keyframes cloud {

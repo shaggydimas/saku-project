@@ -210,7 +210,8 @@ main#container {
   border: 2px solid #fff;
   color: #fff;
   padding: 7px 12px;
-  transition: background .4s; }
+  transition: background .4s;
+  cursor: pointer; }
   .scroll-btn.next:hover {
     background: #fff;
     color: #FF6D69; }
@@ -233,6 +234,12 @@ main#container {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0); }
+
+/*footer*/
+footer {
+  padding: 25px 0;
+  border-top: 1px solid silver;
+  font-size: 14px; }
 
 /*animations*/
 @keyframes cloud {
